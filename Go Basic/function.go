@@ -2,25 +2,26 @@ package main
 
 import "fmt"
 
-func getData() [3]string {
+func getData() ([3]string, int) {
 	fullName := [...]string{
 		"Doltons",
 		"Edward",
 		"Nicholas",
 	}
 
-	return fullName
+	lengthName := len(fullName)
+	return fullName, lengthName
 }
 
 func getFullName() {
-	fullName := getData()
+	fullName, lengthName := getData()
 
 	var result string
 	for i := 0; i < len(fullName); i++ {
 		result += fullName[i] + " "
 	}
 
-	fmt.Printf("%s, %d length of name", result, len(result))
+	fmt.Printf("%s, %d length of name", result, lengthName)
 }
 
 func sayHelloTo(firstName string, lastName string) string {
