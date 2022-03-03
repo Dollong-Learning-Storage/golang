@@ -14,7 +14,7 @@ func getFullName() {
 		result += fullName[i] + " "
 	}
 
-	fmt.Println(result)
+	fmt.Printf("%s, %d length of name", result , len(result))
 }
 
 func main() {
