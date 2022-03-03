@@ -20,6 +20,16 @@ func main() {
 
 	// for loop with range
 	for key, name := range fullName {
-		fmt.Println("index ", key, " = ", name)
+		// continue statement
+		if (key + 1) % 2 == 0 {
+			continue
+		}
+		
+		fmt.Println("index ", key + 1, " = ", name)
+
+		// break statement
+		// if key + 1 == 2 {
+		// 	break
+		// }
 	}
 }
