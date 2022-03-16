@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 /**
- * Defer
- * defer is a built-in function from go that will run a function when a parent function finishes executing
- * no matter what happens, even if there is an error
+ * Panic
+ * panic is the function we use to stop the program
+ * The panic function is usually called when an error occurs while the program is running
+ * when panic is called, the program stops but defer will still run
  */
 
 func logging() {
